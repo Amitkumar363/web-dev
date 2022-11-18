@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* navigation bar code starts here */
+
+.nav .menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    background-color: crimson;
+    height: 60px;
+}
+
+nav ul li {
+    padding: 15px;
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: 'Poppins', sans-serif;
+}
+
+#login {
+    margin-left: auto;
+}
+
+nav ul li a:hover {
+    margin: 5px;
+    border-radius: 15px;
+    background-color: rgb(40, 39, 39);
+    padding: 10px;
+}
+
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+
+/* menu btn styling */
+.menu-btn{
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    padding: 15px;
+    display: none;
+}
+
+
+section{
+    padding: 100px 0;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+/* Home Section Starts Here */
+.home{
+    display: flex;
+    background: url("home.jpg") no-repeat center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    /* background-size: cover; */
+    height: 100vh;
+    min-height: 500px;
+}
+.home .max-width{
+    width: 100%;
+    display: flex;
+  }
+.home .max-width .row{
+    margin-right: 0;
+  }
+.brand{
+    
+    border-radius: 50px;
+    padding: 20px;
+    margin-right: 0;
+
+}
+
+.brandName{
+    font-size: 75px;
+    font-weight: 600;
+    color: rgb(74, 34, 255);
+}
+.brandName span{
+    color: crimson;
+}
+.slogan{
+    font-size: 20px;
+    opacity: 0.5;
+
+}
+#register{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    margin: 10px 0;
+}
+
+
+.tech .cards{
+    display: flex;
+    justify-content: space-between;
+
+}
+.tech .cards .card{
+    padding: 50px;
+    font-size: 25px;
+    border-radius: 50%;
+    flex-grow: 2;
+    flex-basis: 0;
+    margin: 0 20px;
+    text-align: center;
+    box-shadow: 0 1rem 3rem rgb(0,0,0, .175);
+}
+
+
+
+
+/* footer styleing */
+
+footer{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+    color: white;
+}
+
+
+
+
+/* Responsive styling */
+@media (max-width: 900px){
+    .menu-btn{
+        position: relative;
+        display: block;
+        z-index: 99;
+        color: white;
+        height: 60px;
+        background-color: crimson;
+    }
+    
+    .nav .menu{
+        display: block;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .nav .menu.active{
+        left: 0;
+    }
+    .nav .menu li{
+        display: block;
+    }
+    .nav .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    nav ul li a:hover{
+        width: 100%;
+        background: rgb(40, 39, 39);
+    }
+
+    .max-width{
+        padding: 0 23px;
+    }
+    
+    .home .brand .brandName{
+        font-size: 50px;
+    }
+}
+@media (max-width: 600px){
+
+    .menu-btn{
+        position: relative;
+        display: block;
+        z-index: 99;
+        color: white;
+    }
+
+    .nav .menu{
+        display: block;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .nav .menu.active{
+        left: 0;
+    }
+    .nav .menu li{
+        display: block;
+    }
+    .nav .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    nav ul li a:hover{
+        width: 100%;
+        background: rgb(40, 39, 39);
+    }
+
+    .max-width{
+
+        padding: 0 23px;
+    }
+    
+    .home .brand .brandName{
+        font-size: 50px;
+    }
+}
